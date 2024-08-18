@@ -1,10 +1,14 @@
 import React from 'react'
+import Navbar from './components/navbar';
 
 export default function page() {
   return (
-    <div>
-      <h1>Dashboard</h1>
-      <a href="/about">About</a>
+    <>
+    <Navbar />
+    <div className="container mx-auto p-4">
+      <h1 className="text-2xl font-bold">Welcome to Next.js!</h1>
+      <p>This is the homepage.</p>
     </div>
+  </>
   )
 }

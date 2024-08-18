@@ -2,7 +2,10 @@ import React from 'react'
 
 const AboutPage = () => {
   return (
-    <div>About Page</div>
+    <div>
+      <h1>About Page</h1>
+      <a href="/latestabout">Latest</a>
+      </div>
     
   )
 }
