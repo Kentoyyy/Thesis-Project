@@ -19,9 +19,11 @@ const config: Config = {
         'secondary-color': '#41B3A2',
         'third-color': '#BDE8CA',
         'sub-color': '#000',
+        'ghost-white': '#f8f8ff',
       },
       fontFamily:{
         title:["Roboto", "sans-serif"],
+        robotoserif:["Roboto Serf", "serif"],
       }
     },
   },
