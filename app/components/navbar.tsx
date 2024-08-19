@@ -1,14 +1,31 @@
+"use client";
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
+import { HiOutlineMenu, HiOutlineX } from 'react-icons/hi'; // Icons for menu and close
 
 const Navbar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="bg-transparent text-black mt-5">
-      <div className="w-full flex justify-start items-center py-5 px-8">
-        <Link href="/" className="text-xl font-extrabold text-black ml-32 font-title">
+      <div className="w-full flex justify-between items-center py-5 px-8">
+        <Link href="/" className="text-xl font-extrabold text-black font-title">
           EarlyEdge
         </Link>
-        <div className="hidden md:flex space-x-6 ml-auto mr-14 font-semibold ">
+        <div className="md:hidden">
+          <button onClick={toggleMenu} aria-label="Toggle Menu">
+            {isOpen ? <HiOutlineX className="text-2xl" /> : <HiOutlineMenu className="text-2xl" />}
+          </button>
+        </div>
+        <div
+          className={`${
+            isOpen ? 'flex' : 'hidden'
+          } flex-col md:flex md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-6 ml-auto mr-14 font-semibold items-center`}
+        >
           <Link href="/" className="text-sm text-black hover:text-gray-600 hover:underline hover:underline-offset-8 hover:decoration-black transition duration-300">
             Home
           </Link>
