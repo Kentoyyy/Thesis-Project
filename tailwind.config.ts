@@ -1,3 +1,4 @@
+import { title } from "process";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -18,6 +19,9 @@ const config: Config = {
         'secondary-color': '#41B3A2',
         'third-color': '#BDE8CA',
         'sub-color': '#000',
+      },
+      fontFamily:{
+        title:["Roboto", "sans-serif"],
       }
     },
   },
