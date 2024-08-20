@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="bg-transparent text-black mt-5">
-      <div className="w-full flex justify-between items-center py-5 px-8">
+      <div className="w-full flex justify-between items-center py-5 px-28">
         <Link href="/" className="text-xl font-extrabold text-black font-title">
           EarlyEdge
         </Link>

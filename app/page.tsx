@@ -27,6 +27,16 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <section className='machinelearning'>
+        <div className="bg-primary-color min-h-[40rem]">
+          <h2 className="text-white-600">Transforming</h2>
+        </div>
+      </section>
+      <section className="testemonials pt-11" >
+        <div className=" min-h-[40rem]">
+          <h2 className="text-white-600">Testimonials</h2>
+        </div>
+      </section>
       <Footer />
     </>
   );
