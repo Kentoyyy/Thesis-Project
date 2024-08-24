@@ -6,6 +6,7 @@ import data from '../public/images/data.png';
 import model from '../public/images/modeltraning.png';
 import time from '../public/images/realtime.png';
 
+
 export default function Home() {
   return (
     <>
@@ -39,10 +40,10 @@ export default function Home() {
           <p className="mb-10 max-w-xl mx-auto text-sm md:text-base">
             Our machine learning-based system helps identify learning disabilities early by analyzing key developmental indicators.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-24">
             {/* Data Collection */}
             <div className="flex flex-col items-center text-center">
-              <Image src={data} alt="Data Collection" width={64} height={64} className="mb-2" />
+              <Image src={data} alt="Data Collection" width={100} height={100} className="mb-2" />
               <h3 className="text-lg font-semibold mb-1">Data Collection</h3>
               <p className="text-xs md:text-sm max-w-xs">
                 Gathering comprehensive data, including behavioral observations and test scores, to support early identification.
@@ -50,7 +51,7 @@ export default function Home() {
             </div>
             {/* Model Training */}
             <div className="flex flex-col items-center text-center">
-              <Image src={model} alt="Model Training" width={64} height={64} className="mb-2" />
+              <Image src={model} alt="Model Training" width={100} height={100} className="mb-2" />
               <h3 className="text-lg font-semibold mb-1">Model Training</h3>
               <p className="text-xs md:text-sm max-w-xs">
                 Training algorithms to detect patterns that may indicate learning disabilities.
@@ -58,7 +59,7 @@ export default function Home() {
             </div>
             {/* Real-Time Predictions */}
             <div className="flex flex-col items-center text-center">
-              <Image src={time} alt="Real-Time Predictions" width={64} height={64} className="mb-2" />
+              <Image src={time} alt="Real-Time Predictions" width={100} height={100} className="mb-2" />
               <h3 className="text-lg font-semibold mb-1">Real-Time Predictions</h3>
               <p className="text-xs md:text-sm max-w-xs">
                 Providing real-time predictions to identify learning disabilities as early as possible.
