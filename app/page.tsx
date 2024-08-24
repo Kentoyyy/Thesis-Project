@@ -33,35 +33,35 @@ export default function Home() {
       </main>
 
       {/* Machine Learning Section */}
-      <section className="bg-teal-700 text-white py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-center text-3xl font-bold mb-8">Transforming Early Child Education</h2>
-          <p className="text-center mb-12 max-w-2xl mx-auto">
-            Our machine learning-based system is designed to support early identification of learning disabilities by analyzing key developmental indicators.
+      <section className="bg-teal-600 text-white py-10">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">Transforming Early Child Education</h2>
+          <p className="mb-10 max-w-xl mx-auto text-sm md:text-base">
+            Our machine learning-based system helps identify learning disabilities early by analyzing key developmental indicators.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Data Collection */}
             <div className="flex flex-col items-center text-center">
-              <Image src={data} alt="Data Collection" width={96} height={96} className="mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Data Collection</h3>
-              <p className="text-sm">
-                We work closely with parents and educators to gather comprehensive data, including behavioral observations, test scores, and developmental milestones.
+              <Image src={data} alt="Data Collection" width={64} height={64} className="mb-2" />
+              <h3 className="text-lg font-semibold mb-1">Data Collection</h3>
+              <p className="text-xs md:text-sm max-w-xs">
+                Gathering comprehensive data, including behavioral observations and test scores, to support early identification.
               </p>
             </div>
             {/* Model Training */}
             <div className="flex flex-col items-center text-center">
-              <Image src={model} alt="Model Training" width={96} height={96} className="mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Model Training</h3>
-              <p className="text-sm">
-                Using this data, our algorithms are trained to detect subtle patterns that may indicate the presence of a learning disability.
+              <Image src={model} alt="Model Training" width={64} height={64} className="mb-2" />
+              <h3 className="text-lg font-semibold mb-1">Model Training</h3>
+              <p className="text-xs md:text-sm max-w-xs">
+                Training algorithms to detect patterns that may indicate learning disabilities.
               </p>
             </div>
             {/* Real-Time Predictions */}
             <div className="flex flex-col items-center text-center">
-              <Image src={time} alt="Real-Time Predictions" width={96} height={96} className="mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Real-Time Predictions</h3>
-              <p className="text-sm">
-                Our system provides real-time predictions to detect subtle patterns that may indicate the presence of a learning disability.
+              <Image src={time} alt="Real-Time Predictions" width={64} height={64} className="mb-2" />
+              <h3 className="text-lg font-semibold mb-1">Real-Time Predictions</h3>
+              <p className="text-xs md:text-sm max-w-xs">
+                Providing real-time predictions to identify learning disabilities as early as possible.
               </p>
             </div>
           </div>
