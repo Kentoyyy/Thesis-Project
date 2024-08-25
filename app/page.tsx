@@ -35,40 +35,63 @@ export default function Home() {
         </div>
       </main>
 
-      <section id="machine-learning" className="bg-[#0D7C66] text-white py-40">
-  <div className="container mx-auto px-4 text-center">
-    <h2 className="text-2xl md:text-3xl font-semibold mb-6">Transforming Early Child Education</h2>
-    <p className="mb-10 max-w-2xl mx-auto text-sm md:text-base">
-      Our machine learning-based system helps identify learning disabilities early by analyzing key developmental indicators.
-    </p>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {/* Data Collection */}
-      <div className="flex flex-col items-center text-center">
-        <Image src={data} alt="Data Collection" width={80} height={80} className="mb-4" />
-        <h3 className="text-base font-medium mb-4">Data Collection</h3>
-        <p className="text-xs md:text-sm">
-          Gathering comprehensive data, including behavioral observations and test scores, to support early identification.
-        </p>
-      </div>
-      {/* Model Training */}
-      <div className="flex flex-col items-center text-center">
-        <Image src={model} alt="Model Training" width={80} height={80} className="mb-4" />
-        <h3 className="text-base font-medium mb-4">Model Training</h3>
-        <p className="text-xs md:text-sm">
-          Training algorithms to detect patterns that may indicate learning disabilities.
-        </p>
-      </div>
-      {/* Real-Time Predictions */}
-      <div className="flex flex-col items-center text-center">
-        <Image src={time} alt="Real-Time Predictions" width={80} height={80} className="mb-4" />
-        <h3 className="text-base font-medium mb-4">Real-Time Predictions</h3>
-        <p className="text-xs md:text-sm">
-          Providing real-time predictions to identify learning disabilities as early as possible.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+      <section id="machine-learning" className="bg-[#0D7C66] text-white py-40 relative overflow-hidden">
+        {/* Background Gradient */}
+        <div className="absolute inset-0">
+          <div className="w-full h-full bg-gradient-to-r from-teal-600 to-teal-800 opacity-25"></div>
+        </div>
+
+        {/* Content Container */}
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">Transforming Early Child Education</h2>
+          <p className="mb-36 max-w-2xl mx-auto text-xs md:text-base">
+            Our machine learning-based system helps identify learning disabilities early by analyzing key developmental indicators.
+          </p>
+
+          {/* Features Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Data Collection */}
+            <div className="flex flex-col items-center text-center border-t border-gray-100 pt-4 transition-transform transform hover:scale-105">
+              <Image src={data} alt="Data Collection" width={80} height={80} className="mb-4" />
+              <h3 className="text-base font-medium mb-4">Data Collection</h3>
+              <p className="text-xs md:text-sm">
+                Gathering comprehensive data, including behavioral observations and test scores, to support early identification.
+              </p>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white mt-4" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2 10a8 8 0 1116 0 8 8 0 01-16 0zM5 8a1 1 0 000 2h10a1 1 0 100-2H5z" />
+              </svg>
+            </div>
+
+            {/* Model Training */}
+            <div className="flex flex-col items-center text-center border-t border-gray-100 pt-4 transition-transform transform hover:scale-105">
+              <Image src={model} alt="Model Training" width={80} height={80} className="mb-4" />
+              <h3 className="text-base font-medium mb-4">Model Training</h3>
+              <p className="text-xs md:text-sm">
+                Training algorithms to detect patterns that may indicate learning disabilities.
+              </p>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white mt-4" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2 10a8 8 0 1116 0 8 8 0 01-16 0zM5 8a1 1 0 000 2h10a1 1 0 100-2H5z" />
+              </svg>
+            </div>
+
+            {/* Real-Time Predictions */}
+            <div className="flex flex-col items-center text-center border-t border-gray-100 pt-4 transition-transform transform hover:scale-105">
+              <Image src={time} alt="Real-Time Predictions" width={80} height={80} className="mb-4" />
+              <h3 className="text-base font-medium mb-4">Real-Time Predictions</h3>
+              <p className="text-xs md:text-sm">
+                Providing real-time predictions to identify learning disabilities as early as possible.
+              </p>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white mt-4" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2 10a8 8 0 1116 0 8 8 0 01-16 0zM5 8a1 1 0 000 2h10a1 1 0 100-2H5z" />
+              </svg>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          
+        </div>
+      </section>
+
 
       <section className="bg-white text-teal-900 py-16">
         <div className="container mx-auto px-6 text-center">
