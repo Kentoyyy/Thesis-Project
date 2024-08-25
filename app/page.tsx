@@ -34,7 +34,7 @@ export default function Home() {
       </main>
 
       {/* Machine Learning Section */}
-      <section className="bg-teal-600 text-white py-10">
+      <section className="bg-teal-700 text-white py-10">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-6">Transforming Early Child Education</h2>
           <p className="mb-10 max-w-xl mx-auto text-sm md:text-base">
