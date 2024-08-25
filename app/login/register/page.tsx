@@ -14,7 +14,7 @@ const Page = () => {
         <div className="flex flex-col lg:flex-row bg-white rounded-lg shadow-lg max-w-3xl w-full">
           {/* Left side - Form */}
           <div className="w-full lg:w-1/2 p-6">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Register as a Parent</h2>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Register first</h2>
             <p className="text-gray-600 mb-4">Please enter your details to create an account.</p>
             <form>
               <div className="mb-3">
@@ -92,7 +92,7 @@ const Page = () => {
             </form>
             <p className="text-xs text-center text-gray-500 mt-4">
               Already have an account?{' '}
-              <Link href="#" className="text-secondary-color hover:underline">
+              <Link href="/login" className="text-secondary-color hover:underline">
                 Sign in
               </Link>
             </p>
