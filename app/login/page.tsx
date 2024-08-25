@@ -1,8 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Navbar from '../components/navbar'; 
-
+import Navbar from '../components/navbar';
 
 const Page = () => {
   return (
@@ -12,7 +11,7 @@ const Page = () => {
 
       {/* Login form and image */}
       <div className="flex items-center justify-center flex-grow px-4 py-5 mt-12">
-        <div className="flex flex-col lg:flex-row bg-white rounded-lg shadow-lg max-w-3xl w-full">
+        <div className="flex flex-col lg:flex-row bg-white rounded-lg shadow-lg max-w-4xl w-full">
           {/* Left side - Form */}
           <div className="w-full lg:w-1/2 p-6">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Welcome kids!</h2>
@@ -25,7 +24,7 @@ const Page = () => {
                 <input
                   type="email"
                   id="email"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-color"
+                  className="w-full px-0 py-2 border-b border-gray-300 focus:outline-none focus:ring-0 focus:border-primary-color placeholder-gray-500"
                   placeholder="Enter your email"
                 />
               </div>
@@ -36,7 +35,7 @@ const Page = () => {
                 <input
                   type="password"
                   id="password"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-color"
+                  className="w-full px-0 py-2 border-b border-gray-300 focus:outline-none focus:ring-0 focus:border-primary-color placeholder-gray-500"
                   placeholder="********"
                 />
               </div>
@@ -90,9 +89,6 @@ const Page = () => {
           </div>
         </div>
       </div>
-
-      {/* Centered Footer */}
-      
     </div>
   );
 };
