@@ -5,7 +5,6 @@ import Navbar from "../../components/navbar";
 import logo from '../../../public/images/logoelcdl.png';
 import Image from 'next/image';
 
-// Modal Component for Terms and Conditions
 const TermsModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
@@ -24,33 +23,19 @@ const TermsModal = ({ isOpen, onClose }) => {
           <p><strong>Last Updated:</strong> [Insert Date]</p>
           <p>By using our Service, you agree to the following terms:</p>
           <h3 className="font-semibold">1. Purpose</h3>
-          <p>
-            Our Service uses machine learning to help identify potential learning disabilities in children.
-          </p>
+          <p>Our Service uses machine learning to help identify potential learning disabilities in children.</p>
           <h3 className="font-semibold">2. Use of the Service</h3>
-          <p>
-            You must be at least 18 years old or have parental consent to use our Service.
-          </p>
+          <p>You must be at least 18 years old or have parental consent to use our Service.</p>
           <h3 className="font-semibold">3. Privacy and Security</h3>
-          <p>
-            We protect your data in accordance with our Privacy Policy.
-          </p>
+          <p>We protect your data in accordance with our Privacy Policy.</p>
           <h3 className="font-semibold">4. Disclaimer</h3>
-          <p>
-            The Service does not provide medical diagnoses and should not replace professional advice.
-          </p>
+          <p>The Service does not provide medical diagnoses and should not replace professional advice.</p>
           <h3 className="font-semibold">5. Liability</h3>
-          <p>
-            The Service is provided “as is” without warranties of any kind.
-          </p>
+          <p>The Service is provided “as is” without warranties of any kind.</p>
           <h3 className="font-semibold">6. Modifications</h3>
-          <p>
-            We may update these Terms at any time. Continued use constitutes acceptance of the new terms.
-          </p>
+          <p>We may update these Terms at any time. Continued use constitutes acceptance of the new terms.</p>
           <h3 className="font-semibold">7. Governing Law</h3>
-          <p>
-            These Terms are governed by the laws of [Your Jurisdiction].
-          </p>
+          <p>These Terms are governed by the laws of [Your Jurisdiction].</p>
           <h3 className="font-semibold">8. Contact</h3>
           <p>For questions, contact us at [Your Contact Information].</p>
         </div>
@@ -157,7 +142,6 @@ const RegisterPage = () => {
         </div>
       </div>
 
-      {/* Terms and Conditions Modal */}
       <TermsModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </div>
   );
