@@ -34,67 +34,69 @@ export default function Home() {
         </div>
       </main>
 
-      <section id="machine-learning" className="bg-primary-color text-black py-32">
-  <div className="container mx-auto px-4 text-center">
-    <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-white font-title">
-      Transforming Early Child Education
-    </h2>
-    <p className="mb-12 max-w-md mx-auto text-xs md:text-sm leading-relaxed text-white font-title">
-      Our machine learning-based system identifies learning disabilities early by analyzing key developmental indicators.
-    </p>
+      <section id="machine-learning" className="bg-primary-color text-white py-24">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-xl md:text-3xl font-semibold mb-3 font-title">
+            Transforming Early Child Education
+          </h2>
+          <p className="mb-8 max-w-lg mx-auto text-sm md:text-xs leading-relaxed">
+            Our machine learning-based system helps identify learning disabilities early by analyzing key developmental indicators.
+          </p>
 
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {[
-        {
-          src: data,
-          alt: "Data Collection",
-          title: "Data Collection",
-          description:
-            "We gather comprehensive data from multiple sources, including behavioral observations, academic performance, and developmental milestones. This robust dataset forms the foundation for accurate early detection.",
-        },
-        {
-          src: model,
-          alt: "Model Training",
-          title: "Model Training",
-          description:
-            "Our machine learning algorithms are meticulously trained using the collected data. This training enables the system to recognize patterns associated with learning disabilities, ensuring accurate identification.",
-        },
-        {
-          src: time,
-          alt: "Real-Time Predictions",
-          title: "Real-Time Predictions",
-          description:
-            "By analyzing data in real-time, our system provides immediate predictions. This allows educators and parents to take swift action, offering timely interventions that can significantly improve a child's educational journey.",
-        },
-      ].map((feature, index) => (
-        <div
-          key={index}
-          className="flex flex-col items-center text-center bg-gray-50 p-6 rounded-md shadow-sm border border-gray-200 transition-transform transform hover:scale-105"
-        >
-          <Image
-            src={feature.src}
-            alt={feature.alt}
-            width={130}
-            height={130}
-            className="mb-4"
-          />
-          <h3 className="text-base font-medium mb-2 text-primary-color">
-            {feature.title}
-          </h3>
-          <p className="text-xs md:text-sm text-gray-600">
-            {feature.description}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-32 mb-24 px-4">
+  {[
+    {
+      src: data,
+      alt: "Data Collection",
+      title: "Data Collection",
+      description:
+        "Foundation for early detection through comprehensive data.",
+    },
+    {
+      src: model,
+      alt: "Model Training",
+      title: "Model Training",
+      description:
+        "Algorithms detect patterns for accurate identification.",
+    },
+    {
+      src: time,
+      alt: "Real-Time Predictions",
+      title: "Real-Time Predictions",
+      description:
+        "Immediate predictions for timely interventions.",
+    },
+  ].map((feature, index) => (
+    <div
+      key={index}
+      className="flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-lg max-w-xs md:max-w-sm mx-auto mb-8"
+    >
+      <Image
+        src={feature.src}
+        alt={feature.alt}
+        width={120}
+        height={120}
+        className="mb-4"
+      />
+      <h3 className="text-sm font-semibold mb-2 text-gray-900">
+        {feature.title}
+      </h3>
+      <p className="text-xs text-gray-600">
+        {feature.description}
+      </p>
+    </div>
+  ))}
+</div>
+
+        </div>
+
+        <div className="mt-16 text-center">
+          <p className="text-xs md:text-sm max-w-md mx-auto italic">
+            Note: While our machine learning system strives for accuracy, it may not always be fully accurate. Results should guide interventions but be validated with professional assessments.
           </p>
         </div>
-      ))}
-    </div>
-  </div>
+      </section>
 
-  <div className="mt-24 text-center">
-    <p className="text-xs md:text-sm text-white max-w-lg mx-auto italic">
-      Note: While our machine learning system strives to provide accurate predictions, it may not always be fully accurate. The results are intended to guide early interventions but should be validated with professional assessments.
-    </p>
-  </div>
-</section>
 
 
       <section className="bg-white text-teal-900 py-20">
