@@ -11,7 +11,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: "EarlyEdge - Home",
   icons: {
-    icon: '/images/elcdfav.png', // Path starting from the public directory
+    icon: '/images/elcdfav.png', 
   },
 }
 
@@ -27,7 +27,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-robotoserif font-extrabold text-black mb-6">
             Learning Disabilities
           </h2>
-          <p className="text-gray-600 mb-8">
+          <p className="text-gray-600 mb-8"> 
             Utilizing cutting-edge machine learning to identify learning disabilities early and support children’s educational journeys.
           </p>
           <div className="flex justify-center gap-4">

@@ -15,7 +15,10 @@ const Navbar: React.FC = () => {
   };
 
   const linkClassNames = (path: string) =>
-    `text-sm ${pathname === path ? 'text-[#0D7C66] underline underline-offset-8 decoration-[#0D7C66]' : 'text-black'
+    `text-sm ${
+      pathname === path 
+        ? 'text-[#0D7C66] underline underline-offset-8 decoration-[#0D7C66]' 
+        : 'text-black'
     } hover:underline hover:underline-offset-8 hover:decoration-gray-600 focus:underline focus:underline-offset-8 focus:decoration-green-600 active:underline active:underline-offset-8 active:decoration-red-600 transition duration-300`;
 
   return (
@@ -39,8 +42,14 @@ const Navbar: React.FC = () => {
           <Link href="/about" className={linkClassNames('/about')}>
             About
           </Link>
-          <Link href="/features" className={linkClassNames('/features')}>
-            Features
+          <Link href="/detection" className={linkClassNames('/detection')}>
+            Detection Test
+          </Link>
+          <Link href="/machinemodel" className={linkClassNames('/machinemodel')}>
+            ML Model
+          </Link>
+          <Link href="/resources" className={linkClassNames('/resources')}>
+            Resources
           </Link>
           <Link href="/contact" className={linkClassNames('/contact')}>
             Contact
@@ -58,8 +67,14 @@ const Navbar: React.FC = () => {
           <Link href="/about" onClick={toggleMenu} className={linkClassNames('/about')}>
             About
           </Link>
-          <Link href="/features" onClick={toggleMenu} className={linkClassNames('/features')}>
-            Features
+          <Link href="/detection" onClick={toggleMenu} className={linkClassNames('/detection')}>
+            Detection Test
+          </Link>
+          <Link href="/machinemodel" onClick={toggleMenu} className={linkClassNames('/machinemodel')}>
+            ML Model
+          </Link>
+          <Link href="/resources" onClick={toggleMenu} className={linkClassNames('/resources')}>
+            Resources
           </Link>
           <Link href="/contact" onClick={toggleMenu} className={linkClassNames('/contact')}>
             Contact
