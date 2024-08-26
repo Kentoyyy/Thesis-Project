@@ -5,6 +5,7 @@ import Navbar from "../../components/navbar";
 import logo from '../../../public/images/logoelcdl.png';
 import Image from 'next/image';
 
+
 const TermsModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 

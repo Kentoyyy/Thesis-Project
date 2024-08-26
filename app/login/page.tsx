@@ -2,14 +2,22 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Navbar from '../components/navbar';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "EarlyEdge - Login",
+  icons: {
+    icon: '/images/elcdfav.png', // Path starting from the public directory
+  },
+}
 
 const Page = () => {
   return (
     <div className="min-h-screen flex flex-col justify-between overflow-hidden">
-      {/* Include the Navbar */}
+   
       <Navbar />
 
-      {/* Login form and image */}
+     
       <div className="flex items-center justify-center flex-grow px-4 py-5 mt-8">
         <div className="flex flex-col lg:flex-row bg-white rounded-lg shadow-lg max-w-4xl w-full">
           {/* Left side - Form */}
@@ -75,11 +83,11 @@ const Page = () => {
             </p>
           </div>
 
-          {/* Right side - Image */}
+     
           <div className="w-full lg:w-1/2 h-40 lg:h-auto relative">
             <div className="w-full h-full relative">
               <Image
-                src="/images/kidlogin.png" // Reference the image directly by its path
+                src="/images/kidlogin.png" 
                 alt="Login Image"
                 layout="fill"
                 objectFit="contain" // This ensures the image is scaled to fit within its container without being cropped
