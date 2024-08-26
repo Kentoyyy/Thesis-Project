@@ -15,8 +15,7 @@ const Navbar: React.FC = () => {
   };
 
   const linkClassNames = (path: string) =>
-    `text-sm ${
-       pathname === path ? 'text-[#0D7C66] underline underline-offset-8 decoration-[#0D7C66]' : 'text-black'
+    `text-sm ${pathname === path ? 'text-[#0D7C66] underline underline-offset-8 decoration-[#0D7C66]' : 'text-black'
     } hover:underline hover:underline-offset-8 hover:decoration-gray-600 focus:underline focus:underline-offset-8 focus:decoration-green-600 active:underline active:underline-offset-8 active:decoration-red-600 transition duration-300`;
 
   return (
@@ -43,9 +42,6 @@ const Navbar: React.FC = () => {
           <Link href="/features" className={linkClassNames('/features')}>
             Features
           </Link>
-          <Link href="/support" className={linkClassNames('/support')}>
-            Help & Support
-          </Link>
           <Link href="/contact" className={linkClassNames('/contact')}>
             Contact
           </Link>
@@ -64,9 +60,6 @@ const Navbar: React.FC = () => {
           </Link>
           <Link href="/features" onClick={toggleMenu} className={linkClassNames('/features')}>
             Features
-          </Link>
-          <Link href="/support" onClick={toggleMenu} className={linkClassNames('/support')}>
-            Help & Support
           </Link>
           <Link href="/contact" onClick={toggleMenu} className={linkClassNames('/contact')}>
             Contact

@@ -34,61 +34,73 @@ export default function Home() {
         </div>
       </main>
 
-      <section id="machine-learning" className="bg-[#0D7C66] text-white py-32 relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-teal-600 to-teal-800 opacity-30"></div>
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-xl md:text-2xl font-semibold mb-3">Transforming Early Child Education</h2>
-          <p className="mb-24 max-w-xl mx-auto text-sm md:text-base">
-            Our machine learning-based system identifies learning disabilities early by analyzing key developmental indicators.
+      <section id="machine-learning" className="bg-primary-color text-black py-32">
+  <div className="container mx-auto px-4 text-center">
+    <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-white font-title">
+      Transforming Early Child Education
+    </h2>
+    <p className="mb-12 max-w-md mx-auto text-xs md:text-sm leading-relaxed text-white font-title">
+      Our machine learning-based system identifies learning disabilities early by analyzing key developmental indicators.
+    </p>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {[
+        {
+          src: data,
+          alt: "Data Collection",
+          title: "Data Collection",
+          description:
+            "We gather comprehensive data from multiple sources, including behavioral observations, academic performance, and developmental milestones. This robust dataset forms the foundation for accurate early detection.",
+        },
+        {
+          src: model,
+          alt: "Model Training",
+          title: "Model Training",
+          description:
+            "Our machine learning algorithms are meticulously trained using the collected data. This training enables the system to recognize patterns associated with learning disabilities, ensuring accurate identification.",
+        },
+        {
+          src: time,
+          alt: "Real-Time Predictions",
+          title: "Real-Time Predictions",
+          description:
+            "By analyzing data in real-time, our system provides immediate predictions. This allows educators and parents to take swift action, offering timely interventions that can significantly improve a child's educational journey.",
+        },
+      ].map((feature, index) => (
+        <div
+          key={index}
+          className="flex flex-col items-center text-center bg-gray-50 p-6 rounded-md shadow-sm border border-gray-200 transition-transform transform hover:scale-105"
+        >
+          <Image
+            src={feature.src}
+            alt={feature.alt}
+            width={130}
+            height={130}
+            className="mb-4"
+          />
+          <h3 className="text-base font-medium mb-2 text-primary-color">
+            {feature.title}
+          </h3>
+          <p className="text-xs md:text-sm text-gray-600">
+            {feature.description}
           </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                src: data,
-                alt: "Data Collection",
-                title: "Data Collection",
-                description:
-                  "Comprehensive data gathering to support early identification.",
-              },
-              {
-                src: model,
-                alt: "Model Training",
-                title: "Model Training",
-                description:
-                  "Training algorithms to detect patterns of learning disabilities.",
-              },
-              {
-                src: time,
-                alt: "Real-Time Predictions",
-                title: "Real-Time Predictions",
-                description:
-                  "Providing real-time predictions for early identification.",
-              },
-            ].map((feature, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center text-center border-t border-gray-200 pt-4 transition-transform transform hover:scale-105"
-              >
-                <Image
-                  src={feature.src}
-                  alt={feature.alt}
-                  width={60}
-                  height={60}
-                  className="mb-4"
-                />
-                <h3 className="text-base font-medium mb-3">{feature.title}</h3>
-                <p className="text-xs md:text-sm">{feature.description}</p>
-              </div>
-            ))}
-          </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
 
-      <section className="bg-white text-teal-900 py-16">
+  <div className="mt-24 text-center">
+    <p className="text-xs md:text-sm text-white max-w-lg mx-auto italic">
+      Note: While our machine learning system strives to provide accurate predictions, it may not always be fully accurate. The results are intended to guide early interventions but should be validated with professional assessments.
+    </p>
+  </div>
+</section>
+
+
+      <section className="bg-white text-teal-900 py-20">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-2xl md:text-4xl font-semibold mb-4">Why Early Detection Matters</h2>
-          <p className="mb-12 max-w-xl mx-auto text-base md:text-lg leading-relaxed text-gray-700">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-8">Why Early Detection Matters</h2>
+          <p className="mb-16 max-w-2xl mx-auto text-base md:text-lg leading-relaxed text-gray-700">
             Identifying learning disabilities early can significantly impact a child’s educational journey. Our advanced system helps pinpoint challenges before they affect learning, allowing for timely intervention and support.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -114,7 +126,7 @@ export default function Home() {
                   "Utilize data to make informed decisions and improve educational strategies.",
               },
             ].map((benefit, index) => (
-              <div key={index} className="flex flex-col items-center p-6 bg-teal-50 rounded-lg">
+              <div key={index} className="flex flex-col items-center p-6 bg-teal-50 rounded-lg shadow-lg">
                 <h3 className="text-lg font-medium mb-2">{benefit.title}</h3>
                 <p className="text-sm text-gray-600">{benefit.description}</p>
               </div>
@@ -130,6 +142,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
 
       <Footer />
     </>
