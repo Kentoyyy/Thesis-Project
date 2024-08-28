@@ -11,7 +11,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: "EarlyEdge - Home",
   icons: {
-    icon: '/images/elcdfav.png', 
+    icon: '/images/elcdfav.png',
   },
 }
 
@@ -27,7 +27,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-robotoserif font-extrabold text-black mb-6">
             Learning Disabilities
           </h2>
-          <p className="text-gray-600 mb-8"> 
+          <p className="text-gray-600 mb-8">
             Utilizing cutting-edge machine learning to identify learning disabilities early and support children’s educational journeys.
           </p>
           <div className="flex justify-center gap-4">
@@ -40,7 +40,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-
       <section id="machine-learning" className="py-24 bg-gray-50 text-gray-800 relative overflow-hidden">
   <div className="absolute top-0 left-0 w-full h-full">
     <div className="bg-gradient-to-b from-white to-transparent opacity-20 w-full h-full"></div>
@@ -48,39 +47,39 @@ export default function Home() {
     <div className="absolute bottom-16 right-1/4 w-64 h-64 bg-green-200 rounded-full blur-2xl opacity-20"></div>
   </div>
 
-  <div className="container mx-auto px-4 text-center relative z-10">
+  <div className="container mx-auto px-6 md:px-12 lg:px-24 text-center relative z-10">
     <h2 className="text-3xl md:text-3xl font-semibold mb-6 text-gray-900 font-title">
       Transforming Early Child Education
     </h2>
     <p className="mb-12 max-w-md mx-auto text-sm md:text-sm text-gray-600">
-    Our machine learning-based system helps identify learning disabilities early by analyzing key developmental indicators.
+      Our machine learning-based system helps identify learning disabilities early by analyzing key developmental indicators.
     </p>
 
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
       {[
         {
           src: data,
           alt: "Data Collection",
           title: "Data Collection",
           description:
-            "Data is the foundation of our system. We gather and process data from various sources, including educational assessments, behavioral observations, and more. This comprehensive data collection ensures that our models are built on a solid and diverse foundation.",
+            "Our system is built upon a strong foundation of data. We collect and process data from a variety of sources, such as educational assessments, behavioral observations, and more. This thorough data collection approach ensures that our models are robust and diverse, allowing for accurate identification of learning disabilities.",
         },
         {
           src: model,
           alt: "Model Training",
           title: "Model Training",
           description:
-            "Our models are trained using state-of-the-art machine learning techniques. By analyzing the collected data, our models learn to identify patterns and correlations that are indicative of potential learning disabilities. This training process is rigorous and ensures high accuracy.",
+            "Utilizing advanced machine learning techniques, our models are rigorously trained to recognize patterns and correlations in the collected data. This comprehensive training process is designed to achieve high accuracy, ensuring reliable identification of potential learning disabilities.",
         },
         {
           src: time,
           alt: "Real-Time Predictions",
           title: "Real-Time Predictions",
           description:
-            "Once trained, our models can make real-time predictions, providing instant insights into a child's developmental progress. This allows for timely interventions and personalized support, helping to address challenges before they become obstacles.",
+            "After training, our models are capable of making real-time predictions. These predictions provide immediate insights into a child's developmental progress, enabling timely interventions and personalized support to address potential challenges early on.",
         },
       ].map((feature, index) => (
-        <div key={index} className="flex flex-col items-center text-center transition-transform transform hover:scale-105">
+        <div key={index} className="flex flex-col justify-start items-center text-center transition-transform transform hover:scale-105 h-full">
           <Image
             src={feature.src}
             alt={feature.alt}
@@ -95,6 +94,7 @@ export default function Home() {
     </div>
   </div>
 </section>
+
 
 
       <section className="py-32 bg-white text-gray-800" id="matters ">
