@@ -15,52 +15,59 @@ const MachineLearningModel = () => {
   return (
     <>
       <Navbar />
-      <div className="max-w-7xl mx-auto px-6 py-12">
+      <div className="max-w-5xl mx-auto px-4 py-16">
         {/* Machine Learning Model Overview Section */}
         <section className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-gray-800 mb-6">Machine Learning Model Overview</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Our advanced machine learning models are tailored to detect learning disabilities like dyslexia, dysgraphia, and dyscalculia. 
-            By leveraging cutting-edge neural networks, we analyze comprehensive data points to ensure early and precise detection, aiding in effective intervention strategies.
+          <h2 className="text-3xl font-semibold text-gray-800 mb-4">Machine Learning Model Overview</h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Our machine learning models are designed to detect learning disabilities such as dyslexia, dysgraphia, and dyscalculia with high accuracy, aiding in early intervention strategies.
           </p>
         </section>
 
         {/* Main Section Title */}
         <section className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Empower Education with AI-Driven Models</h2>
-          <p className="text-lg text-gray-600 max-w-lg mx-auto">Explore how our models contribute to early detection and personalized learning strategies for a brighter future in education.</p>
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Empower Education with AI-Driven Models</h2>
+          <p className="text-md text-gray-600 max-w-lg mx-auto">
+            Discover how our models help in early detection and support personalized learning paths for enhanced educational outcomes.
+          </p>
         </section>
 
         {/* Model Sections Grid */}
         <div className="grid md:grid-cols-3 gap-12">
           {/* Dyslexia Section */}
-          <div className="bg-gradient-to-r from-green-100 to-blue-100 shadow-lg rounded-xl p-8 flex flex-col items-center text-center transform transition-transform hover:scale-105 hover:shadow-2xl">
-            <Image src="/images/dyslexia-icon.png" alt="Dyslexia Detection" width={80} height={80} className="mb-4" />
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Dyslexia Detection Model</h3>
-            <p className="text-lg text-gray-700 mb-6">
-              Our dyslexia model utilizes a Convolutional Neural Network (CNN) to analyze handwriting and behavioral patterns, ensuring early detection of dyslexia for timely interventions.
+          <div className="bg-white rounded-lg p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+            <Image src="/images/dyslexia-icon.png" alt="Dyslexia Detection" width={50} height={50} className="mb-4" />
+            <h3 className="text-lg font-medium text-gray-800 mb-3">Dyslexia Detection Model</h3>
+            <p className="text-sm text-gray-600 mb-6">
+              Our dyslexia model uses CNNs to analyze handwriting and behavior, allowing for early detection and timely intervention.
             </p>
-            <Link href="/dyslexia-details" className="mt-auto text-[#0D7C66] hover:text-[#065F46] font-medium transition-colors">Learn More</Link>
+            <Link href="/dyslexia-details" className="text-blue-600 hover:text-blue-500 font-medium">
+              Learn More
+            </Link>
           </div>
 
           {/* Dysgraphia Section */}
-          <div className="bg-gradient-to-r from-purple-100 to-pink-100 shadow-lg rounded-xl p-8 flex flex-col items-center text-center transform transition-transform hover:scale-105 hover:shadow-2xl">
-            <Image src="/images/dysgraphia-icon.png" alt="Dysgraphia Detection" width={80} height={80} className="mb-4" />
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Dysgraphia Detection Model</h3>
-            <p className="text-lg text-gray-700 mb-6">
-              Utilizing RNNs and CNNs, our model assesses handwriting fluidity and composition to detect dysgraphia, providing insights into motor and cognitive development.
+          <div className="bg-white rounded-lg p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+            <Image src="/images/dysgraphia-icon.png" alt="Dysgraphia Detection" width={50} height={50} className="mb-4" />
+            <h3 className="text-lg font-medium text-gray-800 mb-3">Dysgraphia Detection Model</h3>
+            <p className="text-sm text-gray-600 mb-6">
+              Our model employs RNNs and CNNs to assess handwriting fluency, offering insights into motor and cognitive skills development.
             </p>
-            <Link href="/dysgraphia-details" className="mt-auto text-[#0D7C66] hover:text-[#065F46] font-medium transition-colors">Learn More</Link>
+            <Link href="/dysgraphia-details" className="text-blue-600 hover:text-blue-500 font-medium">
+              Learn More
+            </Link>
           </div>
 
           {/* Dyscalculia Section */}
-          <div className="bg-gradient-to-r from-yellow-100 to-red-100 shadow-lg rounded-xl p-8 flex flex-col items-center text-center transform transition-transform hover:scale-105 hover:shadow-2xl">
-            <Image src="/images/dyscalculia-icon.png" alt="Dyscalculia Detection" width={80} height={80} className="mb-4" />
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Dyscalculia Detection Model</h3>
-            <p className="text-lg text-gray-700 mb-6">
-              Our hybrid neural network model analyzes mathematical problem-solving abilities to identify dyscalculia, offering guidance for tailored educational support.
+          <div className="bg-white rounded-lg p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+            <Image src="/images/dyscalculia-icon.png" alt="Dyscalculia Detection" width={50} height={50} className="mb-4" />
+            <h3 className="text-lg font-medium text-gray-800 mb-3">Dyscalculia Detection Model</h3>
+            <p className="text-sm text-gray-600 mb-6">
+              Using a hybrid neural network, our model evaluates mathematical skills to identify dyscalculia and recommend personalized educational support.
             </p>
-            <Link href="/dyscalculia-details" className="mt-auto text-[#0D7C66] hover:text-[#065F46] font-medium transition-colors">Learn More</Link>
+            <Link href="/dyscalculia-details" className="text-blue-600 hover:text-blue-500 font-medium">
+              Learn More
+            </Link>
           </div>
         </div>
       </div>
