@@ -17,7 +17,7 @@ const Page = () => {
    
       <Navbar />
 
-     
+    
       <div className="flex items-center justify-center flex-grow px-4 py-5 mt-8">
         <div className="flex flex-col lg:flex-row bg-white rounded-lg shadow-lg max-w-4xl w-full">
           {/* Left side - Form */}

@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
           <Link href="/resources" className={linkClassNames('/resources')}>
             Resources
           </Link>
-          <Link href="/contact" className={linkClassNames('/contact')}>
+          <Link href="/contact" className={linkClassNames('/contact')}> 
             Contact
           </Link>
           <Link href="/login" className={linkClassNames('/login')}>
