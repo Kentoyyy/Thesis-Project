@@ -46,7 +46,7 @@ const AboutPage = () => {
             <p className="text-gray-600">Machine Learning Models</p>
           </div>
           <div className="p-6 bg-white rounded-lg shadow-md">
-            <h2 className="text-3xl font-bold text-gray-800">90%+</h2>
+            <h2 className="text-3xl font-bold text-gra  y-800">90%+</h2>
             <p className="text-gray-600">Accuracy in Detection</p>
           </div>
           <div className="p-6 bg-white rounded-lg shadow-md">

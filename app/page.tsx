@@ -6,7 +6,8 @@ import data from '../public/images/data.png';
 import model from '../public/images/modeltraning.png';
 import time from '../public/images/realtime.png';
 import ai from '../public/images/mattersimage.png';
-import { Metadata } from 'next';
+import chatIcon from '../public/images/chat-icon.png'; 
+import { Metadata } from 'next';// Import the chatbot icon
 
 export const metadata: Metadata = {
   title: "EarlyEdge - Home",
@@ -145,6 +146,13 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Floating Chatbot Icon */}
+      <div className="fixed bottom-4 right-4 z-50">
+        <button className="bg-primary-color p-3 rounded-full shadow-lg hover:bg-secondary-color transition">
+          <Image src={chatIcon} alt="Chatbot Icon" width={40} height={40} />
+        </button>
+      </div>
 
       <Footer />
     </>
