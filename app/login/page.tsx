@@ -7,7 +7,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: "EarlyEdge - Login",
   icons: {
-    icon: '/images/elcdfav.png', // Path starting from the public directory
+    icon: '/images/elcdfav.png',
   },
 }
 
@@ -20,7 +20,7 @@ const Page = () => {
     
       <div className="flex items-center justify-center flex-grow px-4 py-5 mt-8">
         <div className="flex flex-col lg:flex-row bg-white rounded-lg shadow-lg max-w-4xl w-full">
-          {/* Left side - Form */}
+         
           <div className="w-full lg:w-1/2 p-6">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Welcome kids!</h2>
             <p className="text-gray-600 mb-4">Please enter your details to continue.</p>
@@ -90,7 +90,7 @@ const Page = () => {
                 src="/images/kidlogin.png" 
                 alt="Login Image"
                 layout="fill"
-                objectFit="contain" // This ensures the image is scaled to fit within its container without being cropped
+                objectFit="contain" 
                 quality={100}
               />
             </div>

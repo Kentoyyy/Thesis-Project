@@ -40,64 +40,63 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <section id="machine-learning" className="py-24 bg-gray-50 text-gray-800 relative overflow-hidden">
-  <div className="absolute top-0 left-0 w-full h-full">
-    <div className="bg-gradient-to-b from-white to-transparent opacity-20 w-full h-full"></div>
-    <div className="absolute top-16 left-1/4 w-48 h-48 bg-green-100 rounded-full blur-xl opacity-30"></div>
-    <div className="absolute bottom-16 right-1/4 w-64 h-64 bg-green-200 rounded-full blur-2xl opacity-20"></div>
-  </div>
 
-  <div className="container mx-auto px-6 md:px-12 lg:px-24 text-center relative z-10">
-    <h2 className="text-3xl md:text-3xl font-semibold mb-6 text-gray-900 font-title">
-      Transforming Early Child Education
-    </h2>
-    <p className="mb-12 max-w-md mx-auto text-sm md:text-sm text-gray-600">
-      Our machine learning-based system helps identify learning disabilities early by analyzing key developmental indicators.
-    </p>
+      {/* Updated Machine Learning Section */}
+      <section id="machine-learning" className="py-24 bg-[#0D7C66] text-white relative overflow-hidden h-[800px]">
+        <div className="container mx-auto px-6 md:px-12 lg:px-24 text-center relative z-10">
+          {/* Section Heading */}
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+            Transforming Early Child Education
+          </h2>
+          {/* Section Description */}
+          <p className="mb-12 max-w-md mx-auto text-lg text-white">
+            Our machine learning system identifies learning disabilities early, analyzing key developmental indicators for timely support.
+          </p>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
-      {[
-        {
-          src: data,
-          alt: "Data Collection",
-          title: "Data Collection",
-          description:
-            "Our system is built upon a strong foundation of data. We collect and process data from a variety of sources, such as educational assessments, behavioral observations, and more. This thorough data collection approach ensures that our models are robust and diverse, allowing for accurate identification of learning disabilities.",
-        },
-        {
-          src: model,
-          alt: "Model Training",
-          title: "Model Training",
-          description:
-            "Utilizing advanced machine learning techniques, our models are rigorously trained to recognize patterns and correlations in the collected data. This comprehensive training process is designed to achieve high accuracy, ensuring reliable identification of potential learning disabilities.",
-        },
-        {
-          src: time,
-          alt: "Real-Time Predictions",
-          title: "Real-Time Predictions",
-          description:
-            "After training, our models are capable of making real-time predictions. These predictions provide immediate insights into a child's developmental progress, enabling timely interventions and personalized support to address potential challenges early on.",
-        },
-      ].map((feature, index) => (
-        <div key={index} className="flex flex-col justify-start items-center text-center transition-transform transform hover:scale-105 h-full">
-          <Image
-            src={feature.src}
-            alt={feature.alt}
-            width={120}
-            height={120}
-            className="mb-6"
-          />
-          <h3 className="text-lg font-semibold mb-4 text-gray-800">{feature.title}</h3>
-          <p className="text-sm text-gray-600">{feature.description}</p>
+          {/* Features Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                src: data,
+                alt: "Data Collection",
+                title: "Data Collection",
+                description:
+                  "Collecting comprehensive data, including behavioral observations, test scores, and developmental milestones.",
+              },
+              {
+                src: model,
+                alt: "Model Training",
+                title: "Model Training",
+                description:
+                  "Training models to recognize patterns with high accuracy, aiding in the identification of potential learning disabilities.",
+              },
+              {
+                src: time,
+                alt: "Real-Time Predictions",
+                title: "Real-Time Predictions",
+                description:
+                  "Providing real-time insights into a child's progress for proactive interventions and support.",
+              },
+            ].map((feature, index) => (
+              <div key={index} className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                <Image
+                  src={feature.src}
+                  alt={feature.alt}
+                  width={120}
+                  height={120}
+                  className="mb-4"
+                />
+                {/* Feature Title */}
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">{feature.title}</h3>
+                {/* Feature Description */}
+                <p className="text-sm text-gray-600">{feature.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
-
-
-      <section className="py-32 bg-white text-gray-800" id="matters ">
+      <section className="py-32 bg-white text-gray-800" id="matters">
         <div className="container mx-auto px-6 flex flex-col md:flex-row items-center mt-20">
           <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
             <Image
