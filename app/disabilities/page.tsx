@@ -24,12 +24,12 @@ const DetectionTest = () => {
     };
     
     fetchData();
-  }, [selectedTab]);
+  }, [selectedTab]); 
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async () => {
     event.preventDefault();
     try {
-      const response = await fetch(`/api/tests/${selectedTab}/submit`, {
+      const response = await f  etch(`/api/tests/${selectedTab}/submit`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
