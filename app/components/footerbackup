@@ -1,0 +1,62 @@
+import React from 'react';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+
+const Footer = () => {
+  return (
+    <footer className="bg-gray-900 text-gray-300 py-8">
+      <div className="max-w-screen-xl mx-auto px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 text-center sm:text-left">
+          <div>
+            <h6 className="font-semibold mb-4">Company</h6>
+            <ul>
+              <li><a href="#" className="text-gray-400 hover:text-gray-200">About Us</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-gray-200">Our Services</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-gray-200">Privacy Policy</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-gray-200">Affiliate Program</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6 className="font-semibold mb-4">Get Help</h6>
+            <ul>
+              <li><a href="#" className="text-gray-400 hover:text-gray-200">FAQ</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-gray-200">Shipping</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-gray-200">Returns</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-gray-200">Payment Options</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6 className="font-semibold mb-4">Online Shop</h6>
+            <ul>
+              <li><a href="#" className="text-gray-400 hover:text-gray-200">Watch</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-gray-200">Bag</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-gray-200">Shoes</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-gray-200">Dress</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6 className="font-semibold mb-4">Follow Us</h6>
+            <div className="flex justify-center sm:justify-start space-x-4">
+              <a href="#" className="text-gray-400 hover:text-gray-200">
+                <FaFacebookF />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-gray-200">
+                <FaTwitter />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-gray-200">
+                <FaInstagram />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-gray-200">
+                <FaLinkedinIn />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="text-center text-xs text-gray-500 mt-8">
+          &copy; {new Date().getFullYear()} ECLD. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
