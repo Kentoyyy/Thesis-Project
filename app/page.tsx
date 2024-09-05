@@ -43,7 +43,7 @@ export default function Home() {
       </main>
 
       {/* Updated Machine Learning Section */}
-      <section id="machine-learning" className="py-24 bg-[#0D7C66] text-white relative overflow-hidden h-[800px]">
+      <section id="machine-learning" className="py-20 bg-[#0D7C66] text-white relative overflow-hidden h-[800px]">
         <div className="container mx-auto px-6 md:px-12 lg:px-24 text-center relative z-10">
           {/* Section Heading */}
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
@@ -97,55 +97,92 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-32 bg-white text-gray-800" id="matters">
-        <div className="container mx-auto px-6 flex flex-col md:flex-row items-center mt-20">
-          <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
-            <Image
-              src={ai}
-              alt="Illustration of early detection"
-              width={300}
-              height={200}
-              className="object-cover"
-            />
-          </div>
-          <div className="md:w-1/2 text-left md:pl-12">
-            <h2 className="text-3xl font-medium mb-6 font-title">
-              Why Early Detection Matters
-            </h2>
-            <p className="mb-6 text-sm md:text-base text-gray-600 font-title">
-              Identifying learning disabilities early can significantly impact a child’s educational journey. Our system helps pinpoint challenges before they affect learning, enabling timely intervention.
-            </p>
-            <div className="space-y-4">
-              {[
-                {
-                  title: "Early Intervention",
-                  description: "Address challenges early to improve long-term outcomes.",
-                },
-                {
-                  title: "Personalized Support",
-                  description: "Tailor strategies to each child’s unique needs.",
-                },
-                {
-                  title: "Enhanced Environment",
-                  description: "Foster a supportive and understanding environment.",
-                },
-                {
-                  title: "Data-Driven Insights",
-                  description: "Utilize data to improve educational strategies.",
-                },
-              ].map((benefit, index) => (
-                <div key={index} className="flex items-start">
-                  <div className="w-4 h-4 bg-gray-700 rounded-full mt-1 mr-3"></div>
-                  <div>
-                    <h3 className="text-base font-medium">{benefit.title}</h3>
-                    <p className="text-xs text-gray-600">{benefit.description}</p>
-                  </div>
-                </div>
-              ))}
+      <section className="py-32 bg-gray-50 text-gray-800" id="matters">
+  <div className="container mx-auto px-6 flex flex-col md:flex-row items-center mt-20 space-y-10 md:space-y-0">
+    {/* Illustration Image Section */}
+    <div className="md:w-1/2 flex justify-center">
+      <div className="relative w-80 h-64">
+        <Image
+          src={ai} // Placeholder for the AI illustration
+          alt="Illustration of early detection"
+          layout="fill"
+          objectFit="contain"
+          className="rounded-xl shadow-lg"
+        />
+        <div className="absolute bottom-0 right-0 w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center">
+          <Image
+            src="/icons/brain-scan.png" // Replace with related icon
+            alt="Brain scan icon"
+            width={40}
+            height={40}
+          />
+        </div>
+      </div>
+    </div>
+    
+    {/* Content Section */}
+    <div className="md:w-1/2 md:pl-12 text-left">
+      <h2 className="text-4xl font-bold mb-6 text-indigo-800 leading-snug">
+        Why Early Detection Matters
+      </h2>
+      <p className="mb-8 text-md md:text-lg text-gray-600 leading-relaxed">
+        Early identification of learning disabilities plays a crucial role in a child’s development. Our system empowers parents and educators with the tools to detect and address potential challenges before they impact learning, ensuring timely and effective intervention.
+      </p>
+      
+      {/* Benefits Section */}
+      <div className="grid gap-6 sm:grid-cols-2">
+        {[
+          {
+            title: "Early Intervention",
+            description: "Address challenges early to improve long-term outcomes.",
+            icon: "/icons/early-intervention.svg", // Replace with actual icon path
+          },
+          {
+            title: "Personalized Support",
+            description: "Tailor strategies to each child’s unique needs.",
+            icon: "/icons/personalized-support.svg",
+          },
+          {
+            title: "Supportive Environment",
+            description: "Foster a supportive and understanding environment.",
+            icon: "/icons/supportive-environment.svg",
+          },
+          {
+            title: "Data-Driven Insights",
+            description: "Utilize data to improve educational strategies.",
+            icon: "/icons/data-driven.svg",
+          },
+        ].map((benefit, index) => (
+          <div key={index} className="flex items-start space-x-4">
+            <div className="w-12 h-12 p-2 bg-indigo-100 rounded-full">
+              <Image
+                src={benefit.icon}
+                alt={`${benefit.title} icon`}
+                width={40}
+                height={40}
+              />
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-indigo-800">{benefit.title}</h3>
+              <p className="text-sm text-gray-600">{benefit.description}</p>
             </div>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+      
+      {/* Call-to-action button */}
+      <div className="mt-8">
+        <a
+          href="#"
+          className="inline-block bg-indigo-600 text-white py-2 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition duration-300 ease-in-out"
+        >
+          Learn More
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
       <div className="fixed bottom-5 right-5">
         <Chatbot />
       </div>

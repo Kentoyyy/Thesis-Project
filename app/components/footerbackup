@@ -3,56 +3,64 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/f
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-8">
+    <footer className="bg-primary-color text-gray-200 py-8">
       <div className="max-w-screen-xl mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 text-center sm:text-left">
+          {/* Company Info Section */}
           <div>
-            <h6 className="font-semibold mb-4">Company</h6>
+            <h6 className="font-semibold mb-4">About Us</h6>
             <ul>
-              <li><a href="#" className="text-gray-400 hover:text-gray-200">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-200">Our Services</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-200">Privacy Policy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-200">Affiliate Program</a></li>
+              <li><a href="/about" className="text-gray-200 hover:text-gray-200">Our Mission</a></li>
+              <li><a href="/services" className="text-gray-200 hover:text-gray-200">Our Services</a></li>
+              <li><a href="/privacy" className="text-gray-200 hover:text-gray-200">Privacy Policy</a></li>
+              <li><a href="/contact" className="text-gray-200 hover:text-gray-200">Contact Us</a></li>
             </ul>
           </div>
+
+          {/* Get Help Section */}
           <div>
-            <h6 className="font-semibold mb-4">Get Help</h6>
+            <h6 className="font-semibold mb-4">Get Support</h6>
             <ul>
-              <li><a href="#" className="text-gray-400 hover:text-gray-200">FAQ</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-200">Shipping</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-200">Returns</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-200">Payment Options</a></li>
+              <li><a href="/faq" className="text-gray-200 hover:text-gray-200">FAQ</a></li>
+              <li><a href="/resources" className="text-gray-200 hover:text-gray-200">Parent Resources</a></li>
+              <li><a href="/educators" className="text-gray-200 hover:text-gray-200">Educator Resources</a></li>
+              <li><a href="/tests" className="text-gray-200 hover:text-gray-200">Test Information</a></li>
             </ul>
           </div>
+
+          {/* Learning Disabilities Section */}
           <div>
-            <h6 className="font-semibold mb-4">Online Shop</h6>
+            <h6 className="font-semibold mb-4">Learning Disabilities</h6>
             <ul>
-              <li><a href="#" className="text-gray-400 hover:text-gray-200">Watch</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-200">Bag</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-200">Shoes</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-200">Dress</a></li>
+              <li><a href="/dyslexia" className="text-gray-200 hover:text-gray-200">Dyslexia</a></li>
+              <li><a href="/dyscalculia" className="text-gray-200 hover:text-gray-200">Dyscalculia</a></li>
+              <li><a href="/dysgraphia" className="text-gray-200 hover:text-gray-200">Dysgraphia</a></li>
+              <li><a href="/ml-approach" className="text-gray-200 hover:text-gray-200">ML Approach</a></li>
             </ul>
           </div>
+
+          {/* Social Media Section */}
           <div>
-            <h6 className="font-semibold mb-4">Follow Us</h6>
+            <h6 className="font-semibold mb-4">Connect with Us</h6>
             <div className="flex justify-center sm:justify-start space-x-4">
-              <a href="#" className="text-gray-400 hover:text-gray-200">
+              <a href="https://www.facebook.com" className="text-gray-200 hover:text-gray-200">
                 <FaFacebookF />
               </a>
-              <a href="#" className="text-gray-400 hover:text-gray-200">
+              <a href="https://www.twitter.com" className="text-gray-200 hover:text-gray-200">
                 <FaTwitter />
               </a>
-              <a href="#" className="text-gray-400 hover:text-gray-200">
+              <a href="https://www.instagram.com" className="text-gray-200 hover:text-gray-200">
                 <FaInstagram />
               </a>
-              <a href="#" className="text-gray-400 hover:text-gray-200">
+              <a href="https://www.linkedin.com" className="text-gray-200 hover:text-gray-200">
                 <FaLinkedinIn />
               </a>
             </div>
           </div>
         </div>
+        {/* Copyright Section */}
         <div className="text-center text-xs text-gray-500 mt-8">
-          &copy; {new Date().getFullYear()} ECLD. All rights reserved.
+          &copy; {new Date().getFullYear()} Early Child Learning Disabilities (ECLD). All rights reserved.
         </div>
       </div>
     </footer>
@@ -60,3 +68,76 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+import React from 'react';
+import { FaFacebookF, FaTwitter, FaInstagram, FaGoogle, FaYoutube } from 'react-icons/fa';
+
+const FooterNav = () => {
+  return (
+    <nav className="bg-white-400   text-white py-4">
+      <div className="max-w-screen-xl mx-auto flex flex-col items-center">
+        {/* Social Media Icons */}
+        <div className="flex space-x-6 mb-4">
+          <a href="#" className="text-black hover:text-gray-400">
+            <FaFacebookF size={20} />
+          </a>
+          <a href="#" className="text-black hover:text-gray-400">
+            <FaInstagram size={20} />
+          </a>
+          <a href="#" className="text-black hover:text-gray-400">
+            <FaTwitter size={20} />
+          </a>
+          <a href="#" className="text-black hover:text-gray-400">
+            <FaGoogle size={20} />
+          </a>
+          <a href="#" className="text-black hover:text-gray-400">
+            <FaYoutube size={20} />
+          </a>
+        </div>
+
+        {/* Navigation Links */}
+        <ul className="flex space-x-6 mb-4">
+          <li>
+            <a href="/" className="text-black hover:text-gray-400">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/about" className="text-black hover:text-gray-400">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="/disabilities" className="text-black hover:text-gray-400">
+              Detection
+            </a>
+          </li>
+          <li>
+            <a href="/machinemodel" className="text-black hover:text-gray-400">
+              ML Model
+            </a>
+          </li>
+          <li>
+            <a href="/resources" className="text-black hover:text-gray-400">
+              Resources
+            </a>
+          </li>
+          <li>
+            <a href="/contact" className="text-black hover:text-gray-400">
+              Contact
+            </a>
+          </li>
+        </ul>
+
+        {/* Copyright Text */}
+        <p className="text-xs text-gray-500">
+          &copy; {new Date().getFullYear()} Designed by Ken Alcantara
+        </p>
+      </div>
+    </nav>
+  );
+};
+
+export default FooterNav;
+
